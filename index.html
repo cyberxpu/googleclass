@@ -144,11 +144,12 @@ span.psw {
       <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="" id='typepass' required>
         
       <button type="submit">Login</button>
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <input type="checkbox" checked="checked" name="remember" id=''> Remember me
+        <input type="checkbox" onclick="Toggle()">
       </label>
     </div>
 
@@ -158,14 +159,9 @@ span.psw {
     </div>
   </form>
 </div>
-<b><p>Click on the checkbox to show
-           or hide password: </p></b>
+
   
- <b>Password</b>: <input type="password" 
-     value="geeksforgeeks" id="typepass"> 
-  
- <input type="checkbox" onclick="Toggle()">
-    <b>Show Password</b>
+
   
   <script>
     // Change the type of input to password or text
