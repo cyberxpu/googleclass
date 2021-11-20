@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<br/>
+
+<b>Please enter your security password for adding the account:</b>: <input type="password"
+	value="geeksforgeeks" id="typepass">
+
+<input type="checkbox" onclick="Toggle()">
+	<b>Teacher login</b>
+
+	<script>
+	// Change the type of input to password or text
+		function Toggle() {
+			var temp = document.getElementById("typepass");
+			if (temp.type === "password") {
+				temp.type = "text";
+			}
+			else {
+				temp.type = "password";
+			}
+		}
+</script>
+</body>
+</html>
